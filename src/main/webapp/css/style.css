@@ -1,0 +1,195 @@
+/* ===== Pastel Theme: Cream, Peach, Brown, Yellow ===== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #fdf6ec 0%, #fbe8d3 100%);
+    color: #5a4634;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 480px;
+    margin: 60px auto;
+    background: #fffaf3;
+    border-radius: 18px;
+    padding: 36px 40px;
+    box-shadow: 0 8px 24px rgba(184, 140, 90, 0.15);
+    border: 1px solid #f0dcc0;
+}
+
+.container.wide {
+    max-width: 700px;
+}
+
+h2 {
+    color: #8a5a2b;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    color: #7a5c3e;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #ecd9bd;
+    border-radius: 10px;
+    background: #fffdf9;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #5a4634;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #e0a458;
+    box-shadow: 0 0 0 3px rgba(224, 164, 88, 0.2);
+}
+
+input[type="submit"], .btn {
+    margin-top: 24px;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #e8a856 0%, #d98e4a 100%);
+    color: #fffaf3;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+    letter-spacing: 0.3px;
+}
+
+input[type="submit"]:hover, .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(216, 148, 78, 0.35);
+}
+
+a {
+    color: #b9752f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p.link-row {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #8a6f52;
+}
+
+.error {
+    background: #fbe3d4;
+    color: #a1502a;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    border-left: 4px solid #d9814a;
+}
+
+/* ===== Table (Balances) ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background: #e8a856;
+    color: #fffaf3;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+td {
+    padding: 12px 16px;
+    background: #fffdf9;
+    border-bottom: 1px solid #f3e4cc;
+    font-size: 14px;
+    color: #5a4634;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td.positive { color: #4f8a5b; font-weight: 600; }
+td.negative { color: #c0563a; font-weight: 600; }
+
+/* ===== Checkbox group for members ===== */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.checkbox-item {
+    background: #fbe8d3;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #6b4e2e;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #f0dcc0;
+}
+
+.checkbox-item input {
+    width: auto;
+    margin: 0;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background: #8a5a2b;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar .brand {
+    color: #fdf6ec;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.navbar a {
+    color: #fbe8d3;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+}
